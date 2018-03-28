@@ -1,0 +1,32 @@
+##SET UP WEBDRIVER W/ systemProperties##
+
+start url = getWebsiteFromUser() //Doing GUI(????)
+
+script = getScript() //read in javascript content
+
+webdriver launch w/ start url
+
+String actions = ""; //String that will accumulate actions from user in browser 
+
+try{
+	apply script to driver; // eventlisteners are added to webelements on the page
+	
+	apply eventlistener(){whenenever DOMSubTree is modified/changed, apply script again to the updated webelements}
+	
+	while(user is on the same url){
+		actions += get
+	}
+
+
+
+
+
+
+}catch(404Exception e4){//new Stuff to do; when driver returns due to 404
+	
+}
+catch(Exception e){ //exception when user closes browser; happy path exception
+	
+
+}
+
